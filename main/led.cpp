@@ -1,6 +1,6 @@
 /**!
 Author : Thomas
-Function set led
+Function to control the led on a pin
 
 */
 #include "led.h"

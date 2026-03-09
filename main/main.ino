@@ -1,4 +1,10 @@
 #include "led.h"
+
+#define SDA_PIN 8
+#define SCL_PIN 9
+
+#define NT3H_ADDR 0x55   // default I2C address
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
@@ -8,8 +14,10 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   //delay(10); // this speeds up the simulation
-  delayMicroseconds(1000000);
-  set_Led(13, HIGH);
-  delayMicroseconds(1000000);
-  set_Led(13, LOW);
+
+
+  // delayMicroseconds(1000000);
+  // set_Led(13, HIGH);
+  // delayMicroseconds(1000000);
+  // set_Led(13, LOW);
 }
